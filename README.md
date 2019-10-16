@@ -1,6 +1,7 @@
 [![Build Status](https://travis-ci.org/tomerghelber/Travelon.svg?branch=master)](https://travis-ci.org/tomerghelber/Travelon)
 [![dependencies Status](https://david-dm.org/tomerghelber/Travelon/status.svg)](https://david-dm.org/tomerghelber/Travelon)
 [![Inline docs](http://inch-ci.org/github/tomerghelber/Travelon.svg?branch=master)](http://inch-ci.org/github/tomerghelber/Travelon)
+[![Coverage Status](https://coveralls.io/repos/github/tomerghelber/Travelon/badge.svg?branch=master)](https://coveralls.io/github/tomerghelber/Travelon?branch=master)
 [![Maintainability](https://api.codeclimate.com/v1/badges/bc30f9b27c79103d305a/maintainability)](https://codeclimate.com/github/tomerghelber/Travelon/maintainability)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
