@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/tomerghelber/Travelon.svg?branch=master)](https://travis-ci.org/tomerghelber/Travelon)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
