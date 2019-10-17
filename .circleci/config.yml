@@ -1,7 +1,9 @@
 version: 2.1
 jobs:
   build:
-    working_directory: ~/mern-starter
+    environment:
+      CC_TEST_REPORTER_ID: fc3b0060e6bb0bd92a8ce45c1060afc61db6d6fa45007e8e29c52ee02e8c0fc6
+    working_directory: ~/repo
     docker:
       - image: circleci/node:10.16.3
     steps:
@@ -18,6 +20,12 @@ jobs:
           key: dependency-cache-{{ checksum "package-lock.json" }}
           paths:
             - ./node_modules
+      - run:
+          name: Setup Code Climate test-reporter
+          command: |
+          # download test reporter as a static binary
+            curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+            chmod +x ./cc-test-reporter
       - run:
           name: test
           command: npm test
