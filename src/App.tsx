@@ -1,7 +1,8 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
+import Travel from './Travel';
 
 const App: React.FC = () => {
   return (
@@ -37,11 +38,17 @@ const AppRouter: React.FC = () => {
                         <li>
                             <Link to="/">Home</Link>
                         </li>
+                        <li>
+                            <Link to="/travel/test">Test travel</Link>
+                        </li>
                     </ul>
                 </nav>
 
-                <Route path="/" exact><App /></Route>
-                <Route path="*"><NoMatch /></Route>
+                <Switch>
+                    <Route path="/" exact ><App /></Route>
+                    <Route path="/travel/:id" exact component={Travel} />
+                    <Route path="*" ><NoMatch /></Route>
+                </Switch>
             </div>
         </Router>
     );
