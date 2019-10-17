@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
 
@@ -21,6 +22,24 @@ const App: React.FC = () => {
       </header>
     </div>
   );
-}
+};
 
-export default App;
+const AppRouter: React.FC = () => {
+    return (
+        <Router>
+            <div>
+                <nav>
+                    <ul>
+                        <li>
+                            <Link to="/">Home</Link>
+                        </li>
+                    </ul>
+                </nav>
+
+                <Route path="/" exact component={App} />
+            </div>
+        </Router>
+    );
+};
+
+export default AppRouter;
