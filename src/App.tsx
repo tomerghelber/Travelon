@@ -24,6 +24,10 @@ const App: React.FC = () => {
   );
 };
 
+const NoMatch: React.FC = () => {
+    return (<div>404 - path not found</div>)
+};
+
 const AppRouter: React.FC = () => {
     return (
         <Router>
@@ -36,7 +40,8 @@ const AppRouter: React.FC = () => {
                     </ul>
                 </nav>
 
-                <Route path="/" exact component={App} />
+                <Route path="/" exact><App /></Route>
+                <Route path="*"><NoMatch /></Route>
             </div>
         </Router>
     );
