@@ -45,9 +45,9 @@ const AppRouter: React.FC = () => {
                 </nav>
 
                 <Switch>
-                    <Route path="/" exact ><App /></Route>
+                    <Route path="/" exact component={App} />
                     <Route path="/travel/:id" exact component={Travel} />
-                    <Route path="*" ><NoMatch /></Route>
+                    <Route path="*" component={NoMatch} />
                 </Switch>
             </div>
         </Router>
