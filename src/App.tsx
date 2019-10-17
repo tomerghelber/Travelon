@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
 import Travel from './Travel';
+import {Provider} from "react-redux";
+import store from "./redux/store";
 
 const App: React.FC = () => {
   return (
@@ -54,4 +56,12 @@ const AppRouter: React.FC = () => {
     );
 };
 
-export default AppRouter;
+const AppWrapper: React.FC = () => {
+    return (
+        <Provider store={store}>
+            <AppRouter />
+        </Provider>
+    );
+};
+
+export default AppWrapper;
