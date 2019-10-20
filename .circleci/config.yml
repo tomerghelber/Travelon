@@ -35,7 +35,7 @@ jobs:
           name: Code Climate Test Coverage
           command: |
             # upload test report to Code Climate using `after-build`
-             ./cc-test-reporter after-build --coverage-input-type clover --exit-code $?
+             ./cc-test-reporter after-build
       - store_artifacts:
           path: test-results.xml
           prefix: tests
