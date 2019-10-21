@@ -1,7 +1,7 @@
 [![CircleCI](https://circleci.com/gh/tomerghelber/Travelon.svg?style=svg)](https://circleci.com/gh/tomerghelber/Travelon)
 [![dependencies Status](https://david-dm.org/tomerghelber/Travelon/status.svg)](https://david-dm.org/tomerghelber/Travelon)
 [![Inline docs](http://inch-ci.org/github/tomerghelber/Travelon.svg?branch=master)](http://inch-ci.org/github/tomerghelber/Travelon)
-[![Coverage Status](https://coveralls.io/repos/github/tomerghelber/Travelon/badge.svg?branch=master)](https://coveralls.io/github/tomerghelber/Travelon?branch=master)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/bc30f9b27c79103d305a/test_coverage)](https://codeclimate.com/github/tomerghelber/Travelon/test_coverage)
 [![Maintainability](https://api.codeclimate.com/v1/badges/bc30f9b27c79103d305a/maintainability)](https://codeclimate.com/github/tomerghelber/Travelon/maintainability)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
