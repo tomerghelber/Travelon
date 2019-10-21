@@ -30,7 +30,7 @@ jobs:
             ./cc-test-reporter before-build
       - run:
           name: test
-          command: npm test
+          command: npm test -- --coverage
       - run:
           name: Code Climate Test Coverage
           command: |
