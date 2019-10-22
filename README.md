@@ -3,6 +3,7 @@
 [![Inline docs](http://inch-ci.org/github/tomerghelber/Travelon.svg?branch=master)](http://inch-ci.org/github/tomerghelber/Travelon)
 [![Coverage Status](https://coveralls.io/repos/github/tomerghelber/Travelon/badge.svg?branch=master)](https://coveralls.io/github/tomerghelber/Travelon?branch=master)
 [![Maintainability](https://api.codeclimate.com/v1/badges/bc30f9b27c79103d305a/maintainability)](https://codeclimate.com/github/tomerghelber/Travelon/maintainability)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f2be9198-6095-4fb8-a503-929ba87b5822/deploy-status)](https://app.netlify.com/sites/travelony/deploys)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
