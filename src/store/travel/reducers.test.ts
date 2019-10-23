@@ -48,5 +48,38 @@ describe('travel reducer', () => {
             travel: travel
         });
         expect(actual).toEqual(expected)
+    });
+
+    it('should not add an exiting travel', () => {
+        const travelSource = {
+            id: "RANDOM",
+            source: "source"
+        };
+        const travel = {
+            startDate: {
+                year: 2019,
+                month: 1,
+                day: 2
+            },
+            days: [],
+            source: travelSource
+        };
+        const travel2 = {
+            startDate: {
+                year: 2018,
+                month: 2,
+                day: 3
+            },
+            days: [],
+            source: travelSource
+        };
+        const expected = {
+            travels: [travel2]
+        };
+        const actual = reducer(expected, {
+            type: types.ADD_TRAVEL,
+            travel: travel
+        });
+        expect(actual).toEqual(expected)
     })
 });
