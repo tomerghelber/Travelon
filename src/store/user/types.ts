@@ -1,10 +1,16 @@
 import { Action } from 'redux';
 
-export interface UserState {
+interface UserLoggedOutState {
     loggedIn: boolean,
-    id?: string,
-    name?: string
 }
+
+interface UserLoggedInState {
+    loggedIn: boolean,
+    id: string,
+    name: string
+}
+
+export type UserState = UserLoggedInState | UserLoggedOutState;
 
 export const USER_LOGIN = 'USER_LOGIN';
 export const USER_LOGOUT = 'USER_LOGOUT';
