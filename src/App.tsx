@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import Travel from './Travel';
 import {Provider} from "react-redux";
-import store from "./redux/store";
+import store from "./store";
 import Home from "./pages/Home";
 import NoMatch from "./pages/NoMatch";
 
