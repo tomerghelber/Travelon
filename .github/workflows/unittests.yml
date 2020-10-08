@@ -25,7 +25,9 @@ jobs:
     steps:
       - name: Setup Node.js environment
         uses: actions/setup-node@v2.1.2
-      
+        with:
+          check-latest: true
+
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
