@@ -16,13 +16,16 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-    container: circleci/node:14.9.0
+#     container: circleci/node:14.9.0
     
     env:
       CC_TEST_REPORTER_ID: fc3b0060e6bb0bd92a8ce45c1060afc61db6d6fa45007e8e29c52ee02e8c0fc6
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.1.2
+      
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
