@@ -1,10 +1,10 @@
 import { combineReducers, createStore } from 'redux';
 import { travelReducer } from './travel/reducers';
-import { systemReducer } from './system/reducers';
+import { userReducer } from './user/reducers';
 
 const rootReducer = combineReducers({
     travelReducer,
-    systemReducer,
+    userReducer,
 });
 
 export type AppState = ReturnType<typeof rootReducer>;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, NavLink, Switch } from 'react-router-dom';
 import Travel from './pages/Travel';
 import {Provider} from "react-redux";
 import store from "./store";
@@ -13,10 +13,10 @@ const AppRouter: React.FC = () => {
                 <nav>
                     <ul>
                         <li>
-                            <Link to="/">Home</Link>
+                            <NavLink to="/">Home</NavLink>
                         </li>
                         <li>
-                            <Link to="/travel/test">Test travel</Link>
+                            <NavLink to="/travel/test">Test travel</NavLink>
                         </li>
                     </ul>
                 </nav>
