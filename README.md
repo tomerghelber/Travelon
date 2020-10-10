@@ -1,4 +1,3 @@
-[![CircleCI](https://circleci.com/gh/tomerghelber/Travelon.svg?style=svg)](https://circleci.com/gh/tomerghelber/Travelon)
 [![dependencies Status](https://david-dm.org/tomerghelber/Travelon/status.svg)](https://david-dm.org/tomerghelber/Travelon)
 [![Inline docs](http://inch-ci.org/github/tomerghelber/Travelon.svg?branch=master)](http://inch-ci.org/github/tomerghelber/Travelon)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/bc30f9b27c79103d305a/test_coverage)](https://codeclimate.com/github/tomerghelber/Travelon/test_coverage)
